@@ -21,15 +21,14 @@ public class Usuario implements Serializable {
     private String telefone;
     private String senha;
     private char genero;
-    public Usuario(Integer idusuario, String nomeCompleto, String cpf, String email, String telefone, String senha,
-            char genero) {
-        this.idusuario = idusuario;
-        this.nomeCompleto = nomeCompleto;
-        this.cpf = cpf;
-        this.email = email;
-        this.telefone = telefone;
-        this.senha = senha;
-        this.genero = genero;
+    public Usuario(Integer idusuario, String nomeCompleto, String cpf, String email, String telefone, String senha, char genero) {
+        setIdusuario(idusuario);
+        setNomeCompleto(nomeCompleto);
+        setCpf(cpf);
+        setEmail(email);
+        setTelefone(telefone);
+        setSenha(senha);
+        setGenero(genero);
     }
     public Usuario() {
     }
