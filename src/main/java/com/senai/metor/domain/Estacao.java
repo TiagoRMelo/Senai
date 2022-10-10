@@ -18,15 +18,15 @@ public class Estacao implements Serializable {
     private Integer  idestacao;
     
     @NotEmpty(message = "Campo nmEstacao Não pode estar vazio  ")
-    @Length(min = 1,max = 20, message = "Campo nmEstacao  deve ter rentre 5 e 255 caracter")
+    @Length(min = 1,max = 20, message = "Campo nmEstacao  deve ter rentre 5 e 20 caracter")
     private String nmestacao;
     
     @NotEmpty(message = "Campo localEstacao Não pode estar vazio  ")
-    @Length(min = 1,max = 30, message = "Campo localEstacao  deve ter rentre 5 e 255 caracter")
+    @Length(min = 1,max = 30, message = "Campo localEstacao  deve ter rentre 5 e 30 caracter")
     private String localestacao;
     
     @NotEmpty(message = "Campo nmResponsavel Não pode estar vazio  ")
-    @Length(min = 1,max = 40, message = "Campo nmResponsavel  deve ter rentre 5 e 255 caracter")
+    @Length(min = 1,max = 40, message = "Campo nmResponsavel  deve ter rentre 5 e 40 caracter")
     private String nmresponsavel;
 
     public Estacao() {
